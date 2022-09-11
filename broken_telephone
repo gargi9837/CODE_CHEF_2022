@@ -1,0 +1,13 @@
+# cook your dish here
+t = int(input())
+for j in range(t):
+    temp = 0
+    n = int(input())
+    array = list(map(int, input().split()))
+    for i in range(1,n-1):
+        if array[i] != array[i + 1]:
+            temp = temp + 1
+    if temp > 0:
+        print(temp + 2)
+    else:
+        print(0)
